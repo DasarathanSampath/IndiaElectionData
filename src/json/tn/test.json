@@ -1,0 +1,8 @@
+{
+    "performance": [
+        {"year":2015,"party":"BJP","seats":"","contested":69,"won":3,"fd":2,"votes":2890485,"voters":8982228,"electors":13313295},
+        {"year":2015,"party":"BSP","seats":"","contested":70,"won":0,"fd":69,"votes":117093,"voters":8982228,"electors":13313295},
+        {"year":2015,"party":"INC","seats":"","contested":70,"won":0,"fd":62,"votes":866814,"voters":8982228,"electors":13313295},
+        {"year":2015,"party":"AAAP","seats":"","contested":70,"won":67,"fd":0,"votes":4878397,"voters":8982228,"electors":13313295}
+    ]
+}
