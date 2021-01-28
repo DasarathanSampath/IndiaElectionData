@@ -7,7 +7,7 @@ Vue.use(Vuex)
 export default new Vuex.Store({
     state: {
         selectedYear: 2019,
-        parliYears:[2019, 2014],        
+        parliYears:[2019, 2014, 2009, 2004, 1999, 1998, 1996, 1991],        
         winnersData: null,
         performanceData: null,
         stateNames: null,
@@ -15,8 +15,8 @@ export default new Vuex.Store({
         constData: null,
         selectedState: null,
         selectedConst: null,
-        legisStates:['tamilnadu', 'delhi'],
-        selectedStateLegis: 'tamilnadu',
+        legisStates:['Tamil Nadu', 'NCT of Delhi', 'Jharkhand'],
+        selectedStateLegis: 'Tamil Nadu',
         yearsLegis: null,
         selectedYearLegis: null,
         performanceDataLegis: null,

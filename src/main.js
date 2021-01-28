@@ -30,6 +30,7 @@ const firebaseConfig = {
 }
 // Initialize Firebase
 firebase.initializeApp(firebaseConfig)
+firebase.analytics()
 
 /* eslint-disable no-new */
 new Vue({

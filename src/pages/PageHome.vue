@@ -12,7 +12,7 @@
       <div class="column-3">        
         <h4>Electors: <span> {{totalElectors}} </span> </h4> 
         <h4>Voters: <span> {{totalVoters}} </span> </h4> 
-        <h4>Polling Percentage: <span> {{pollingPercentage}} % </span> </h4>
+        <h4>Polling Percentage: <span> {{pollingPercentage.toFixed(2)}} % </span> </h4>
         <h4>Number of Constituency: <span> {{totalConstituency}} </span> </h4>
       </div>
       <div class="column-3">
