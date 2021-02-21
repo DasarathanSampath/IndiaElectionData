@@ -13,12 +13,11 @@
                 class="card"
             />        
         </div>
-        <div v-if="chartdataSeats && optionsSeats" class="column-2" style="padding-left: 1%;">
+        <div v-if="chartdataSeats && optionsSeats" class="column-2">
             <BarChart 
                 :chartData="chartdataSeats"
                 :options="optionsSeats"
-                class="card"
-                
+                class="card"                
             />                     
         </div>
         </div>

@@ -5,7 +5,7 @@
 </template>
 
 <script>
-import jsonData from '@/json/jh/jh2014.json'
+import jsonData from '@/json/kl/kl2006.json'
 
 export default {
   name: 'DataConversion',

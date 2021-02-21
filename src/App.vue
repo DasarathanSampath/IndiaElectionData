@@ -5,6 +5,7 @@
       <router-view :key="$route.path" v-show="showPage" @ready="pageReady"/>
     </div>
     <AppSpinner v-show="!showPage"/>
+    
     <Footer v-if="asyncDataStatus_ready"/>
   </div>
 </template>

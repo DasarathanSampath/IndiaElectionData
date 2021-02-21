@@ -1,6 +1,12 @@
 import Vue from 'vue'
 import Router from 'vue-router'
 import PageHome from '@/pages/PageHome'
+import PageLegislative from '@/pages/PageLegislative.vue'
+import About from '@/pages/PageAbout.vue'
+import Contact from '@/pages/PageContact.vue'
+import Disclaimer from '@/pages/PageDisclaimer.vue'
+import Privacy from '@/pages/PagePrivacy.vue'
+import NotFound from '@/pages/PageNotFound.vue'
 
 Vue.use(Router)
 
@@ -24,32 +30,32 @@ const router = new Router({
     {
       path: '/legislative-election',
       name: 'PageLegislative',
-      component: () => import(/* webpackChunkName: "PageLegislative" */ '@/pages/PageLegislative.vue')
+      component: PageLegislative
     },
     {
       path: '/about',
       name: 'About',
-      component: () => import(/* webpackChunkName: "About" */ '@/pages/PageAbout.vue')
+      component: About
     },
     {
       path: '/contact',
       name: 'Contact',
-      component: () => import(/* webpackChunkName: "About" */ '@/pages/PageContact.vue')
+      component: Contact
     },
     {
       path: '/privacy',
       name: 'Privacy',
-      component: () => import(/* webpackChunkName: "About" */ '@/pages/PagePrivacy.vue')
+      component: Privacy
     },
     {
       path: '/disclaimer',
       name: 'Disclaimer',
-      component: () => import(/* webpackChunkName: "About" */ '@/pages/PageDisclaimer.vue')
+      component: Disclaimer
     },
     {
       path:'*',
       name: 'NotFound',
-      component: () => import(/* webpackChunkName: "notFound" */ '@/pages/PageNotFound.vue')
+      component: NotFound
     }
   ],
   mode: 'history'

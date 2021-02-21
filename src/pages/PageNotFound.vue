@@ -1,15 +1,11 @@
   
 <template>
-    <div class="col-full"
-      :class="$style.centered"
-    >
-      <h1 :class="$style.headingLarge">Not Found</h1>
-      <p class="text-large"
-        :class="$style.textLarge"
-      >
-        Ooops, we couldn't find what you are looking for. Why don't you
+    <div class="centered">
+      <h1 class="headingLarge">Not Found</h1>
+      <p class="textLarge">
+        Ooops, we couldn't find what you are looking for OR we have modified our pages. Why don't you
         <router-link :to="{name: 'Home'}">
-          go home instead?
+            go home instead?
         </router-link>
       </p>
     </div>
@@ -27,10 +23,10 @@ export default {
 
 <style scoped>
   .headingLarge {
-    font-size: 100px;
+    font-size: 50px;
   }
   .textLarge {
-    font-size: 50px;
+    font-size: 25px;
     font-weight: 100;
   }
   .centered {

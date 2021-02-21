@@ -97,7 +97,7 @@ body {
 
 table {    
   border-collapse: collapse;
-  width: 98%;
+  /* width: 98%; */
   display: block;
   overflow-x: auto;
   padding: 0.5rem;
@@ -149,7 +149,8 @@ font-size: 1rem;
 
 .column-2 { 
   float: left;
-  width: 49%;
+  width: 48%;
+  padding-right: 1%;
 }
 
 .column-3 { 
@@ -160,12 +161,12 @@ font-size: 1rem;
 .column-4 { 
   float: left;
   width: 58%;
-  padding-left: 2%;
+  padding-right: 1%;
 }
 .column-5 { 
   float: left;
   width: 38%;
-  padding-left: 2%;
+  padding-right: 1%;
 }
 
 @media (max-width: 640px) {
@@ -182,11 +183,12 @@ font-size: 1rem;
   border-radius: 10px;
   line-height: 0.7rem;
   margin-top: 1rem;
+  /* padding-right: 5%; */
 }
 
 .footer {
   bottom: 0;
-  width: 100%;
+  /* width: 100%; */
   height: 80px;
   font-weight: 600;
   flex-direction: row;
@@ -199,7 +201,6 @@ font-size: 1rem;
 .font13px {
   font-size: 13px;
   font-weight: 400;
-  padding: 0px 0px;
 }
 .footerlink{
   text-decoration: none;

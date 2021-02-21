@@ -15,7 +15,7 @@ export default new Vuex.Store({
         constData: null,
         selectedState: null,
         selectedConst: null,
-        legisStates:['Tamil Nadu', 'NCT of Delhi', 'Jharkhand'],
+        legisStates:['Tamil Nadu', 'NCT of Delhi', 'Jharkhand', 'West Bengal', 'Kerala', 'Puducherry'],
         selectedStateLegis: 'Tamil Nadu',
         yearsLegis: null,
         selectedYearLegis: null,
