@@ -59,7 +59,6 @@ import PerformanceSummary from '@/components/PerformanceSummary'
 import asyncDataStatus from '@/mixins/asyncDataStatus'
 import StateSummary from '@/components/StateSummary'
 import ConstSummary from '@/components/ConstSummary'
-
 export default {
   name: 'HomePage',
   data () {
@@ -67,13 +66,10 @@ export default {
       tableHeadConst: [ 'alliance', 'State Name', 'Constituency', 'Candidate', 'Party', 'Electors', 'Polled', 'Received', 'Rank', '% Electors', '% Polled' ]
     }
   },
-
   components: {
     TableConst, PerformanceSummary, StateSummary, ConstSummary
   },
-
   mixins: [asyncDataStatus],
-
   computed: {
     ...mapGetters({
       storeParliYears: 'parliYears',
@@ -160,7 +156,6 @@ export default {
       return this.storeConstData
     }
   },
-
   methods: {
     setYear (selectedYear) {
       this.$store.dispatch('fetchInitialData', {selectedYear})

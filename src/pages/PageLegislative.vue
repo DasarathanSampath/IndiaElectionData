@@ -59,7 +59,6 @@ import PerformanceSummary from '@/components/PerformanceSummary'
 import asyncDataStatus from '@/mixins/asyncDataStatus'
 import LegislativeSummary from '@/components/LegislativeSummary'
 import ConstSummary from '@/components/ConstSummary'
-
 export default {
   name: 'PageLegislative',
   data () {
@@ -68,13 +67,10 @@ export default {
       stateNamesData: { tamilnadu: 'Tamil Nadu', delhi: 'NCT of Delhi' }
     }
   },
-
   components: {
     TableConst, PerformanceSummary, LegislativeSummary, ConstSummary
   },
-
   mixins: [asyncDataStatus],
-
   computed: {
     ...mapGetters({
       storeLegisStates: 'legisStates',
@@ -161,7 +157,6 @@ export default {
       return this.storeConstDataLegis
     }
   },
-
   methods: {
     setYear (selectedYearLegis) {
       this.$store.dispatch('fetchSelectedYearLegis', {selectedYearLegis})

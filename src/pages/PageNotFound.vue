@@ -1,19 +1,18 @@
   
 <template>
     <div class="centered">
-      <h1 class="headingLarge">Not Found</h1>
-      <p class="textLarge">
-        Ooops, we couldn't find what you are looking for OR we have modified our pages. Why don't you
-        <router-link :to="{name: 'Home'}">
-            go home instead?
-        </router-link>
-      </p>
+      <DynamicComponent PageName="NotFound"/>
     </div>
 </template>
 
 <script>
+import DynamicComponent from './DynamicComponent'
 import asyncDataStatus from '@/mixins/asyncDataStatus'
+
 export default {
+    components: {
+        DynamicComponent
+    },
     mixins: [asyncDataStatus],
     created(){
       this.asyncDataStatus_fetched()
